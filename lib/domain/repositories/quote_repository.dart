@@ -8,17 +8,17 @@ import '../entities/quote_entity.dart';
 
 abstract class QuoteRepository {
   // gets all quotes for main screen
-  Future<Either<FirebaseException, Quote>> getAllQuotes(int userId);
+  Future<Either<FirebaseException, List<Quote>>> getAllQuotes(String userId);
   //gets all quotes for author drawer
-  Future<Either<FirebaseException, AuthorCollection>> getAuthorQuotes(
-      int userId);
+  Future<Either<FirebaseException, List<AuthorCollection>>> getAuthorCollection(
+      String userId);
   //gets all custom user collection
-  Future<Either<FirebaseException, UserCollection>> getUserCollections(
-      int userId);
+  Future<Either<FirebaseException, List<UserCollection>>> getUserCollections(
+      String userId);
 
-  Future<Either<FirebaseException, Success>> createQuote(int userId);
+  Future<Either<FirebaseException, Success>> createQuote(String userId);
 
-  Future<Either<FirebaseException, Success>> editQuote(int userId);
+  Future<Either<FirebaseException, Success>> editQuote(String userId);
 
-  Future<Either<FirebaseException, Success>> deleteQuote(int userId);
+  Future<Either<FirebaseException, Success>> deleteQuote(String userId);
 }

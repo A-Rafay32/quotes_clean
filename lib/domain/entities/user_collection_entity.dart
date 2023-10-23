@@ -1,5 +1,5 @@
 class UserCollection {
-  int id;
+  String id;
   String collectionName;
   List<String> quoteList;
 

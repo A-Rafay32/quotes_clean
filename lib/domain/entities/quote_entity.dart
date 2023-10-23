@@ -1,5 +1,5 @@
 class Quote {
-  int id;
+  String id;
   String collectionName;
   String author;
   String quote;

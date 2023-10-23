@@ -1,5 +1,5 @@
 class AuthorCollection {
-  int id;
+  String id;
   String name;
   List<String> quotes;
 
