@@ -1,4 +1,4 @@
-import '../../domain/entities/user_collection__entity.dart';
+import '../../domain/entities/user_collection_entity.dart';
 
 class UserCollectionModel extends UserCollection {
   UserCollectionModel({
