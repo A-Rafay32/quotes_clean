@@ -1,8 +1,9 @@
-import 'package:firebase_core/firebase_core.dart';
+class Failure {
+  String code;
+  String message;
 
-class FirebaseFailure extends FirebaseException{
-  FirebaseFailure(){
-    
-  }
-
+  Failure({
+    required this.code,
+    required this.message,
+  });
 }
